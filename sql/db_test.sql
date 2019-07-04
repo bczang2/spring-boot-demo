@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS `db_test`;
+CREATE DATABASE `db_test`;
+
+DROP TABLE IF EXISTS `demo`;
+CREATE TABLE `demo`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `create_time` datetime(0) NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_time` datetime(0) NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP(0),
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = 'demo表';

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
  * rest接口控制器
  */
 @RestController
-@RequestMapping(value = "/hello")
+@RequestMapping(value = "/demo")
 @Api(value = "demo-controller", description = "demo controller")
 public class DemoController {
 
